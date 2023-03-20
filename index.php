@@ -1,31 +1,71 @@
-<?php
-require_once('./php/product.php')
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="styles.css">
-    
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="row text-center py-5">
-            <?php
-            for($i=0;$i<6;$i++){
-                product();
-            }
-            ?>
+    <article id="landing">
+        <div class="margin_container">
+            <div class="centered_container">
+                <h1 id="page-header">BingChilling</h1>
+                <div id="login_container">
+                    <a href="pages\login.php">Login</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Contact</a></li>  
+                        <li><a href="" id="vl"></a></li> 
+                    </ul>
+                    <button id="border_button">
+                        order
+                    </button>
+                </nav>
+                <img id="landing-image" src="images\landing-page.jpg" alt="">
+            </div>
         </div>
-    </div>
+    </article>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <article id="about-us">
+        <div class="margin_container">
+            <div class="centered_container">
+                <div class="header">
+                    <hr>
+                    <h1>About Us</h1>
+                    <hr>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda natus, minus enim aliquid temporibus ipsum qui officia tempore voluptas recusandae alias dicta doloribus officiis odit, nobis repellendus soluta possimus et optio a eaque exercitationem deserunt! Et magni maiores facere dignissimos rem inventore, eius fugiat, quae quaerat provident ex eos ipsam cumque dolorem repudiandae corporis aliquam minus aspernatur ab aut. Vero adipisci recusandae enim eligendi? Facilis, nostrum nulla perferendis repudiandae mollitia molestias cumque tenetur itaque voluptatibus ipsa officiis ipsam, repellat quae quia eligendi quasi dicta culpa cum distinctio explicabo deserunt maxime quam voluptatem. Doloremque, optio quae! Odio nostrum dicta id totam.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <article id="menu">
+        <div class="margin_container">
+        <div class="grid_container">
+            <div id="item1">Header</div>
+            <div id="item2">Menu</div>
+            <div id="item3">
+                <div id="products_container" >
+                    <?php
+                        for($i=0; $i<8; $i++){
+                            echo '
+                            <div class="product_container"><div class="product">'.($i+1).'</div></div>
+                            ';
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+    <footer></footer>
 </body>
 </html>

@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.margin_container {
+    margin: 0 12%;
+}
+
+.centered_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#landing {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#page-header {
+    margin: 30px 0;
+    font-size: 75px;
+    font-family: "zeyada", sans-serif;
+    color: #EBC22F;
+}
+
+#login_container {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+}
+
+nav{
+    border-top: 1px solid rgb(91, 91, 91);
+    border-bottom: 1px solid rgb(91, 91, 91);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 24px 0;
+    margin: 0 20px;
+    font-size: 20px;
+    color: rgb(206, 206, 206);
+}
+
+#vl {
+    border-right: 1px solid grey;
+}
+
+nav *{
+    display: inline;
+}
+
+#border_button {
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+#landing-image {
+    margin: 50px 0;
+    width: 120%;
+}
+
+
+/*ABOUT US*/
+
+
+hr{
+    width: 100px;
+    border: 2px solid black;
+}
+
+h1{
+    margin: 20px;
+    font-size: 40px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#about-us{
+    background-color: #fff9e4;
+    padding: 100px 0;
+}
+
+
+/*MENU*/
+#menu{
+    height: 200vh;
+    margin: 150px 0;
+}
+
+#item1 {
+    grid-area: header; 
+    background-color: bisque;
+}
+#item2 {
+    grid-area: menu;
+    background-color: azure;
+}
+#item3 {
+    grid-area: item;
+background-color: #EBC22F;}
+
+.grid_container {
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'menu item item item';
+    background-color: #2196F3;
+    padding: 10px;
+}   
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#products_container{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.product_container{
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    background-color: #EBC22F;
+}
